@@ -62,3 +62,21 @@ if st.button('Predict Price'):
         predicted_price = np.exp(pipe.predict(features)[0])
 
         st.subheader(f"The predicted price of the configured laptop is: Rs {int(predicted_price)} /-")
+
+st.markdown("""
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #transparent;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <div class="footer">
+        <p>Developed by <a href="https://www.linkedin.com/in/debarghya-m/" target="_blank">[Debarghya]</a> | 
+        <a href="https://github.com/debarghya-m" target="_blank">[Source Code]</a></p>
+    </div>
+    """, unsafe_allow_html=True)
